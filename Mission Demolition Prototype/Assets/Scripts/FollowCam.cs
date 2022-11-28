@@ -18,11 +18,6 @@ public class FollowCam : MonoBehaviour
 
     void FixedUpdate()
     {
-        /* //Однострочная версия if не требует фигурных скобок
-        if (POI == null) return;
-
-        // Получить позицию интересующего объекта
-        Vector3 destination = POI.transform.position; */
 
         Vector3 destination;
         if (POI == null)
@@ -42,9 +37,6 @@ public class FollowCam : MonoBehaviour
                 }
             }
         }
-
-
-
 
         destination.x = Mathf.Max(minXY.x, destination.x);
         destination.y = Mathf.Max(minXY.y, destination.y);
